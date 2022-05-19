@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+:root{
+    --Almost-White:hsl(0, 0%, 98%);
+    --Medium-Gray:hsl(0, 0%, 41%);
+    --Almost-Black:hsl(0,0%,8%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 1440px;
+    font-family: 'Outfit', sans-serif;
+}
+
+
+.nav-bar{
+    height: 90px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3rem;
+}
+
+.right-nav-bar{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    width: 50%;
+
+    .logo{display: flex;
+        height: 100%;
+        img{
+            align-self: center;
+        }
+    }
+
+
+
+    .options{
+        display: flex;
+        height: 100%;
+        margin: 0 2rem;
+        ul{
+            align-self: center;
+            display: flex;
+            li{
+                list-style: none;
+                margin: 0 1.5rem;
+                color: var(--Medium-Gray);
+                cursor: pointer;
+            }
+            li:hover{
+                color: var(--Almost-Black);
+                img{
+                    color: var(--Almost-Black);
+                }
+            }
+            span{
+                margin-left: 5px;
+            }
+        }
+    }
+}
+.left-nav-bar{
+
+    a{
+        text-decoration: none;
+        color: var(--Medium-Gray);
+    }
+    a:hover{
+        color: var(--Almost-Black);
+    }
+    .login{
+        margin: 0 2rem;
+    }
+    .register{
+        border: solid var(--Almost-Black) 2px;
+        padding: 10px 20px;
+        border-radius: 0.7rem;
+        outline: none;
+    }
+
+}

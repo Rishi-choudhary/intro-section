@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+:root {
+  --Almost-White:hsl(0, 0%, 98%);
+  --Medium-Gray:hsl(0, 0%, 41%);
+  --Almost-Black:hsl(0,0%,8%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 1440px;
+  font-family: 'Outfit', sans-serif;
+}
+
+.nav-bar {
+  height: 90px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 3rem;
+}
+
+.right-nav-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+}
+
+.right-nav-bar .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+}
+
+.right-nav-bar .logo img {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.right-nav-bar .options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  margin: 0 2rem;
+}
+
+.right-nav-bar .options ul {
+  -ms-flex-item-align: center;
+      align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.right-nav-bar .options ul li {
+  list-style: none;
+  margin: 0 1.5rem;
+  color: var(--Medium-Gray);
+  cursor: pointer;
+}
+
+.right-nav-bar .options ul li:hover {
+  color: var(--Almost-Black);
+}
+
+.right-nav-bar .options ul li:hover img {
+  color: var(--Almost-Black);
+}
+
+.right-nav-bar .options ul span {
+  margin-left: 5px;
+}
+
+.left-nav-bar a {
+  text-decoration: none;
+  color: var(--Medium-Gray);
+}
+
+.left-nav-bar a:hover {
+  color: var(--Almost-Black);
+}
+
+.left-nav-bar .login {
+  margin: 0 2rem;
+}
+
+.left-nav-bar .register {
+  border: solid var(--Almost-Black) 2px;
+  padding: 10px 20px;
+  border-radius: 0.7rem;
+  outline: none;
+}
+/*# sourceMappingURL=style.css.map */
