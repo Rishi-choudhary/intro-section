@@ -13,7 +13,8 @@
 }
 
 body {
-  height: 1440px;
+  height: auto;
+  width: 1440px;
   font-family: 'Outfit', sans-serif;
 }
 
@@ -62,11 +63,12 @@ body {
   display: flex;
   height: 100%;
   margin: 0 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .right-nav-bar .options ul {
-  -ms-flex-item-align: center;
-      align-self: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -77,13 +79,12 @@ body {
   margin: 0 1.5rem;
   color: var(--Medium-Gray);
   cursor: pointer;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .right-nav-bar .options ul li:hover {
-  color: var(--Almost-Black);
-}
-
-.right-nav-bar .options ul li:hover img {
   color: var(--Almost-Black);
 }
 
@@ -110,4 +111,128 @@ body {
   border-radius: 0.7rem;
   outline: none;
 }
+
+.hero {
+  height: 70%;
+  width: 80%;
+  margin: 3rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hero .hero-content {
+  position: relative;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.hero .hero-content .content {
+  text-align: left;
+  margin: 5rem 0;
+}
+
+.hero .hero-content .content h1 {
+  font-size: 5rem;
+}
+
+.hero .hero-content .content p {
+  width: 80%;
+  margin: 4rem 0;
+  color: var(--Medium-Gray);
+  line-height: 1.5;
+  font-size: 1.3rem;
+}
+
+.hero .hero-content .content .btn {
+  background-color: var(--Almost-Black);
+  color: var(--Almost-White);
+  padding: 1.2rem 2rem;
+  outline: none;
+  border-radius: 1rem;
+  border-style: none;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.hero .hero-content .content .btn:hover {
+  color: var(--Almost-Black);
+  background-color: var(--Almost-White);
+  border: 2px solid var(--Almost-Black);
+  cursor: pointer;
+}
+
+.hero .hero-content .hero-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+  bottom: 0;
+  position: absolute;
+}
+
+.hero .hero-img {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.hero .hero-img img {
+  height: 100%;
+  width: 100%;
+}
+
+/* Style The Dropdown Button */
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  padding: 0.5rem;
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 170px;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  right: 20px;
+  top: 35px;
+  border-radius: 10px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 1.2rem;
+}
+
+.dropdown-content a span {
+  padding: 0 10px 0 0;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content:hover {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
 /*# sourceMappingURL=style.css.map */
